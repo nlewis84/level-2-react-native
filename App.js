@@ -42,7 +42,11 @@ function App() {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: "Overview" }}
+          options={{
+            title: "Overview",
+            headerStyle: { backgroundColor: "#373142" },
+            headerTitleStyle: { color: "#FFF" },
+          }}
         />
         <Stack.Screen name="Details" component={DetailsScreen} />
       </Stack.Navigator>
